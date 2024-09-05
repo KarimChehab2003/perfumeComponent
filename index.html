@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="bg-customCream montserrat">
+  <main class="min-h-screen h-full flex justify-center items-center">
+    <section class="max-w-screen-sm md:max-w-screen-md  bg-white flex flex-col md:flex-row rounded-2xl">
+      <div class="md:w-2/4">
+        <picture>
+          <source class="rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl" srcset="./src/images/image-product-mobile.jpg" media="(max-width: 767.5px)">
+          <img class="rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl" src="./src/images/image-product-desktop.jpg" alt="Product Image">
+        </picture>
+      </div>
+
+      <section class="md:w-2/4 p-8">
+        <span class="text-gray-600 uppercase text-lg" style="letter-spacing: 0.25em;">Perfume</span>
+        <h1 class="font-bold fraunces text-5xl my-5">Gabrielle Essence Eau De Parfum</h1>
+        <p class="text-gray-500 my-8">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.</p>
+
+        <span class="text-emerald-700 font-bold text-4xl me-4 fraunces">$149.99</span>
+        <span class="line-through text-gray-500">$169.99</span>
+
+        <button class="border bg-emerald-700 flex justify-center items-center py-4 w-full mt-10 rounded-xl active:bg-emerald-900 transition-all">
+          <img src="./src/images/icon-cart.svg" alt="">
+          <span class="font-semibold text-white mx-3">Add to Cart</span>
+        </button>
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>
